@@ -36,6 +36,27 @@ List<Beer> listBeers = new() {
         AlcoholGrade = "4,7%",
         Size = "laton",
         CountryOrigin = "Mexico"
+    },
+    new Beer {
+        Name = "Heineken",
+        Brand = "Heineken International",
+        AlcoholGrade = "5,7%",
+        Size = "laton",
+        CountryOrigin = "Paises bajos"
+    },
+    new Beer {
+        Name = "Modelo Especial",
+        Brand = "Modelo",
+        AlcoholGrade = "4,5%",
+        Size = "laton",
+        CountryOrigin = "Mexico"
+    },
+    new Beer {
+        Name = "Gallo",
+        Brand = "Guatemaltecos locos",
+        AlcoholGrade = "5,2%",
+        Size = "laton",
+        CountryOrigin = "Guatemala"
     }
 };
 listBeers.ForEach(beer => Console.WriteLine($"{beer.Name} de {beer.Brand} con {beer.AlcoholGrade} grados de alcohol, presentacion {beer.Size} y su pais de origen {beer.CountryOrigin}."));
